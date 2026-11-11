@@ -1,0 +1,20 @@
+- insert:
+    - id: sol-wallet
+      name: dsh-wallet-tracker
+      config:
+        # --- Solana ---------------------------------------------------------
+        # Balances, prices and the signature list.
+        rpcUrl: https://api.mainnet-beta.solana.com
+        # Swap history. This keyless endpoint takes concurrent getTransaction calls;
+        # the official public endpoint throttles them to a crawl.
+        historyRpcUrl: https://solana-rpc.publicnode.com
+        historyConcurrency: 6
+        # How many recent transactions the FIFO PnL looks at (Solana and EVM).
+        scanSignatures: 150
+        # Optional free key from helius.dev: overrides both URLs with a faster endpoint.
+        # heliusKey: ''
+        # --- EVM ------------------------------------------------------------
+        # Any chain may point at another Blockscout-compatible instance when the default
+        # public one blocks requests (Base/Arbitrum/Polygon answer 403 from Cloudflare).
+        # explorers:
+        #   base: https://your-blockscout.example

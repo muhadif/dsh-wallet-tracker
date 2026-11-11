@@ -1,0 +1,56 @@
+{
+  "name": "dsh-wallet-tracker",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "Multi-chain wallet watcher for DeepSeek Harness: Solana, EVM and Bitcoin balances, live prices, FIFO PnL and a token detail drawer (chart, trades, holders).",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "check.mjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "docs/*.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "wallet",
+    "solana",
+    "evm",
+    "ethereum",
+    "bitcoin",
+    "portfolio",
+    "pnl"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhadif/dsh-wallet-tracker.git"
+  },
+  "homepage": "https://github.com/muhadif/dsh-wallet-tracker#readme",
+  "bugs": {
+    "url": "https://github.com/muhadif/dsh-wallet-tracker/issues"
+  }
+}
