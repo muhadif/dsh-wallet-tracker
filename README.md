@@ -76,7 +76,9 @@ Edit the row in your profile's `cordis.patch.yml`:
 
 ## Screenshots
 
-Coming in a follow-up commit — the panel is a live Harness surface, so the images are captured from a running profile rather than mocked.
+![Wallet book with the asset table](docs/wallets.png)
+
+![Token detail: chart, pool stats, top holders and latest trades](docs/token-detail.png)
 
 ## Development
 
