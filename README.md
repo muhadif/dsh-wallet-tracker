@@ -76,9 +76,7 @@ Edit the row in your profile's `cordis.patch.yml`:
 
 ## Screenshots
 
-| Portfolio | Token detail |
-|---|---|
-| ![Wallet book](docs/wallets.png) | ![Token detail](docs/token-detail.png) |
+Coming in a follow-up commit — the panel is a live Harness surface, so the images are captured from a running profile rather than mocked.
 
 ## Development
 
